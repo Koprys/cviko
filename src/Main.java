@@ -24,15 +24,21 @@ public class Main {
         System.out.println(cena);
     }
 //
-    public static void ukol5() {
-        BigDecimal cena = 0; // Nastavíme do proměnné hodnotu 0
+//public static void ukol5() {
+     //   BigDecimal cena = new BigDecimal(0) ; // Nastavíme do proměnné hodnotu 0
+}
         // Desetkrát přičteme hodnotu jedna desetina (0,1):
-        for (int i = 0; i < 10; i++); {
-            cena += 0.1;
-               // operátor "+=" znamená: přičti ke stávající
-               // hodnotě navíc 0.1
-        }
-        System.out.println(cena);
+      //  for (int i = 0; i < 10; i++) {
+       //     cena += 0.1;
+      //         // operátor "+=" znamená: přičti ke stávající
+      //         // hodnotě navíc 0.1
+      //  }
+      //  System.out.println(cena);
+        // Má vypsat "1.0". Ale vypíše "0.9999" !!!
+
+    ///nevím proč mi to nefunguje:-(
+  // }
+
         // Má vypsat "1.0". Ale vypíše "0.9999" !!!
 
     public static void ukol6() {
@@ -41,19 +47,19 @@ public class Main {
 //        System.out.println(cena);
 //    }
 //
-//    public static void ukol7() {
-//        int vykonMotoru = "120";
-//        System.out.println("Výkon Motoru je: "+vykonMotoru+" kW.");
-//    }
+    public static void ukol7() {
+        int vykonMotoru = 120; //nedava se do uvozovek
+        System.out.println("Výkon Motoru je: "+vykonMotoru+" kW.");
+    }
+
+    public static void ukol8() {
+       int velikostKosile = 37;
+        System.out.println("Velikost košile je: " velikostKosile ".");// bez carek u odkazu na promenou
+    }
 //
-//    public static void ukol8() {
-//        int velikostKosile = 37;
-//        System.out.println("Velikost košile je: ", velikostKosile, ".");
-//    }
-//
-        public static void ukol9() {
-            System.out.println("Metoda *skoro* bez chybičky!");
-        }
+     //  public static void ukol9() {
+       //     System.out.println("Metoda *skoro* bez chybičky!");// chybelo static
+     //   }
 
         public static void main (String[]args){
             System.out.println("Oprav chyby a spusť všechny metody!");
@@ -64,11 +70,11 @@ public class Main {
             ukol2();
             ukol3();
             ukol4();
-            ukol5();
+  //          ukol5();
 //        ukol6();
-//        ukol7();
+        ukol7();
 //        ukol8();
-            ukol9();
+          //  ukol9();
         }
     }
 }
